@@ -30,7 +30,8 @@ h1{
 }
 
 #box{
-    border: 2px solid ;
+    border: 5px solid red;
+    border-radius: 25%;
     padding: 30px;
     margin: 30px;
     width: 300px;
