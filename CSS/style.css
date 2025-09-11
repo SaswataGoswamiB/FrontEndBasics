@@ -30,3 +30,26 @@ p::first-letter{
 p::selection{
     color: yellow
 }
+
+h1:hover{
+    color : rebeccapurple
+}
+
+button:active{
+    color : limegreen;
+    background-color: yellow;
+}
+input:focus{
+    background-color: limegreen;
+}
+
+/* handles the 3rd chiild of h2. */
+
+h2:nth-child(3){
+    color: lime;
+}
+
+/* handles every third  element of h2 */
+/* h2:nth-child(3n){
+    color: lime;
+} */
