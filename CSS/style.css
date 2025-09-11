@@ -1,26 +1,32 @@
-#one{
-    width : 100px;
-    height : 100px;
+p{
+    position: relative;
+    width: fit-content;
+    background-color: green;
+}
+p::before{
+    /* content: '???';
+    width: 100px; */
+    content: '';
+    top: 25%;
+    width : 100%;
+    height : 3px;
     background-color: red;
+     position: absolute;
+
+}
+p::after{
+
+    content: '?????';
 }
 
-#two{
-    width : 100px;
-    height : 100px;
-    background-color: yellow;
+p::first-line{
+    color: blue;
 }
-#three{
-    width : 100px;
-    height : 100px;
-    background-color: limegreen;
+
+p::first-letter{
+    font-size: 120px;
 }
-#box{
-    background-color: blueviolet;
-    display: flex;
-    justify-content: center;
-    /* justify-content: space-around; */
-    /* justify-content: space-evenly; */
-    /* justify-content: end; */
-    align-content: center;
-    /* align-content: end; */
+
+p::selection{
+    color: yellow
 }
