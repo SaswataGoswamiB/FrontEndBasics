@@ -1,0 +1,55 @@
+p{
+    position: relative;
+    width: fit-content;
+    background-color: green;
+}
+p::before{
+    /* content: '???';
+    width: 100px; */
+    content: '';
+    top: 25%;
+    width : 100%;
+    height : 3px;
+    background-color: red;
+     position: absolute;
+
+}
+p::after{
+
+    content: '?????';
+}
+
+p::first-line{
+    color: blue;
+}
+
+p::first-letter{
+    font-size: 120px;
+}
+
+p::selection{
+    color: yellow
+}
+
+h1:hover{
+    color : rebeccapurple
+}
+
+button:active{
+    color : limegreen;
+    background-color: yellow;
+}
+input:focus{
+    background-color: limegreen;
+}
+
+/* handles the 3rd chiild of h2. */
+
+h2:nth-child(3){
+    color: lime;
+}
+
+/* handles every third  element of h2 */
+/* h2:nth-child(3n){
+    color: lime;
+} */
