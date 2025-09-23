@@ -9,10 +9,34 @@ html,body{
     background-color: lightgrey;
     display: grid;
     grid-template-columns: 50% 50%;
-
+    grid-template-rows: 30% 50% 20%;
 }
 
 .elem{
     background-color: red;
     border: 3px solid;
+}
+
+#elem1{
+    background-color: blueviolet;
+    grid-row-start: 1;
+    grid-row-end : 3;
+    grid-column-start: 1;
+    grid-column-end :4
+}
+#left-top-left{
+    background-color: crimson;
+}
+#left-top-right{
+    background-color: blueviolet;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+
+}
+#leftcenter{
+    background-color: royalblue;
+}
+#leftbottom{
+    background-color: chartreuse;
 }
