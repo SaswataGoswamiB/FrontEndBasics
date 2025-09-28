@@ -1,0 +1,261 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+     height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 26% 56% 18%;
+}
+
+.elem{
+    background-color: red;
+    border: 3px solid;
+}
+
+/* #elem1{
+    background-color: blueviolet;
+    grid-row-start: 1;
+    grid-row-end : 3;
+    grid-column-start: 1;
+    grid-column-end :4
+} */
+
+#left-top-left{
+    /* background-color: crimson; */
+    padding : 25px
+}
+#left-top-right {
+    /* background-color: rgb(56, 19, 83); */
+    /* justify-self: right; */
+    padding: 40px;
+    text-align: right;
+
+}
+
+#left-top-right h4 {
+    /* background-color: red; */
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+#left-top-right h5 {
+    /* background-color: red; */
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    margin : 6px
+
+}
+#right{
+    /* background-color: rgb(116, 36, 192); */
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    padding : 30px;
+    padding-right : 100px 
+
+}
+
+#right video{
+    height : 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+#leftcenter{
+    /* background-color: royalblue; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding : 40px;
+    margin: 2px;
+}
+
+#leftcenter h1{
+    /* background-color: royalblue; */
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 6vw;
+    margin : 2px
+} 
+
+#leftcenter h1:nth-child(1){
+    /* padding-left : 100px; */
+    margin-top : 10px
+}
+
+#leftcenter h1:nth-child(2n){
+    /* padding-left : 100px; */
+    text-align: center;
+}
+
+#leftbottom{
+    /* background-color: chartreuse; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top : 20px;
+}
+
+#leftbottom p{
+    font-weight: 500;
+    width : 70%;
+    font-size: 15px;
+
+}
+#square{
+    height : 25px;
+    width : 25px;
+    background-color: black;
+    rotate: 45deg;
+}
+#arrow{
+    position: absolute;
+    top: 60%;
+    left : 51%;
+    background-color: orangered;
+    color: white;
+    padding : 20px;
+    border-radius: 50%;
+    size: 10%;
+}
+
+/* Responsive Code */
+
+@media (max-width:600px) {
+    html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+     height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 26% 56% 18%;
+}
+
+.elem{
+    background-color: red;
+    border: 3px solid;
+}
+
+/* #elem1{
+    background-color: blueviolet;
+    grid-row-start: 1;
+    grid-row-end : 3;
+    grid-column-start: 1;
+    grid-column-end :4
+} */
+
+#left-top-left{
+    /* background-color: crimson; */
+    padding : 25px
+}
+#left-top-right {
+    /* background-color: rgb(56, 19, 83); */
+    /* justify-self: right; */
+    padding: 40px;
+    text-align: right;
+
+}
+
+#left-top-right h4 {
+    /* background-color: red; */
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+#left-top-right h5 {
+    /* background-color: red; */
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    margin : 6px
+
+}
+#right{
+    /* background-color: rgb(116, 36, 192); */
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    padding : 30px;
+    padding-right : 100px 
+
+}
+
+#right video{
+    height : 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+#leftcenter{
+    /* background-color: royalblue; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding : 40px;
+    margin: 2px;
+}
+
+#leftcenter h1{
+    /* background-color: royalblue; */
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 6vw;
+    margin : 2px
+} 
+
+#leftcenter h1:nth-child(1){
+    /* padding-left : 100px; */
+    margin-top : 10px
+}
+
+#leftcenter h1:nth-child(2n){
+    /* padding-left : 100px; */
+    text-align: center;
+}
+
+#leftbottom{
+    /* background-color: chartreuse; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top : 20px;
+}
+
+#leftbottom p{
+    font-weight: 500;
+    width : 70%;
+    font-size: 15px;
+
+}
+#square{
+    height : 25px;
+    width : 25px;
+    background-color: black;
+    rotate: 45deg;
+}
+#arrow{
+    position: absolute;
+    top: 60%;
+    left : 51%;
+    background-color: orangered;
+    color: white;
+    padding : 20px;
+    border-radius: 50%;
+    font-size: 50px;
+}
+}
