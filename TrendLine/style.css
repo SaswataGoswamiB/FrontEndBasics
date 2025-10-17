@@ -82,17 +82,18 @@ width: 100%;
     width : 100%;
     /* background-color: burlywood; */
     display: flex;
+    /* flex-shrink: 0; */
     flex-wrap: nowrap;
     overflow-x: auto;
 }
-#TextContent::-webkit-scrollbar{
+/* #TextContent::-webkit-scrollbar{
     background-color: transparent;
-    height: 7px;
-}
+    height: 10px;
+}  */
 
-#TextContent::-webkit-scrollbar-thumb{
+ /* #TextContent::-webkit-scrollbar-thumb{
     background-color: orangered;
-}
+} */
 .elem{
     flex-shrink: 0;
     height: 100%;

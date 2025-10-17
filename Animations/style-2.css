@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#box1{
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+  position: relative;
+  animation-name: boxanime;
+  animation-duration: 2s;
+  /* animation-delay: 1s; */
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  /* animation-direction: reverse; */
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+#box2{
+  height: 300px;
+  width: 300px;
+  background-color: greenyellow;
+  position: relative;  
+  animation-name: boxanime;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+h1{
+    font-size: 100px;
+    color: red;
+}
+
+h1::after{
+  content: "💖💖";
+  color: orange;
+}
+
+h1::before{
+  content: "✨✨";
+  color: orange;
+}
+
+@keyframes boxanime {
+    from{
+        left: 0;
+    }
+
+    to{
+        left: 75%;
+    }
+}

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+ #box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 1sec;
+ } 
+
+ img{
+    height: 600px;
+    position: absolute;
+    animation-name:ben10 ;
+    animation-duration: 2s;
+    animation-delay: 1s;
+ }
+
+ @keyframes move {
+    from{
+        left: 0%;
+        background-color: red;
+        rotate: 0deg;
+    }
+    to{
+        left: 90%;
+        background-color: blue;
+        rotate: 360deg;
+    }
+ }
+
+ @keyframes ben10{
+    /* from{
+        left :0;
+        top : 0;
+    }
+    to{
+        left: 80%;
+        top : 50%;
+    } */
+
+    0%{
+        left :0;
+        top : 0;
+        rotate: 0deg;
+    }
+ 
+
+    50%{
+        left: 40%;
+        top : 20%;
+        rotate: 360deg;
+    }
+
+    100%{
+        left: 80%;
+        top : 50%;
+        rotate: 720deg;
+    }
+ }
