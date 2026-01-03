@@ -1,0 +1,26 @@
+*{
+    margin : 0; 
+    pading : 0;
+    box-sizing: 0;
+}
+html,body{
+    width: 100%;
+    height : 100%;
+}
+#body {
+    width: 100%;
+    height: 100%;
+    background-color: #031b34;
+}
+.btn-031b34 {
+  background-color: #031b34;
+  color: #fff;
+  border: 1px solid #031b34;
+}
+.btn-031b34:hover,
+.btn-031b34:focus {
+  background-color: #012334; /* slightly darker for hover */
+  border-color: #012334;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(3,27,52,0.25);
+}
