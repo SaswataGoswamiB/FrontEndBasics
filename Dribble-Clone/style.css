@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+
+#page1 {
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    height: 120px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+#nav1 {
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav1 h4 {
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#nav2 {
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: .5vw;
+}
+
+#nav img {
+    height: 90px;
+}
+
+#nav2 button:nth-last-child(1){
+    padding: 12px 18px;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+#nav2 button:nth-child(1){
+    padding: 12px 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+#content {
+    height: calc(100% - 120px);
+    width: 100%;
+    /* background-color: crimson; */
+    padding-top: 100px;
+}
+
+#content h3{
+    background-color: #F2B0EA;
+    padding : 8px 16px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50px;
+    position: relative;
+    left: 39%;
+    font-size: 17px;
+
+}
+
+#content h1{
+    padding: 30px 40px; 
+   font-size: 90px;
+   text-align: center;
+   line-height: 90px;
+
+}
+
+#content h4{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#content button{
+    padding: 12px 18px;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 16px;
+    position: relative;
+    left: 44%;
+    margin-top: 2vh;
+}
