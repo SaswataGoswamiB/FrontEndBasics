@@ -9,7 +9,7 @@ const arr2 = [4, 5, 6];
 const arr3 = arr1;
 
 // We are using Spread Operator on Primitive Data
-// and on PrimtiveDta only value is copied not the reference.
+// and on Primtive Dta only value is copied not the reference.
 // So when we change the value of arr4 then the value of arr1 will not change 
 // because both are refering to different array in memory.
 const arr4 =[...arr1];
