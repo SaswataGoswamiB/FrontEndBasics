@@ -12,3 +12,40 @@ document.querySelector("#CutomEventButton").addEventListener("saswataevent",func
 
 // trigger/dispatch the cuctom event
 document.querySelector("#CutomEventButton").dispatchEvent(saswataevent);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const xyz = new Event("testingevents");
+
+document.querySelector("#CutomEventButton").addEventListener("testingevents",function(){
+    console.log("Custom Event trigerred")
+})
+
+document.querySelector("#CutomEventButton").dispatchEvent(xyz);
