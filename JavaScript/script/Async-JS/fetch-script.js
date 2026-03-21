@@ -12,3 +12,8 @@ console.log(hey);
 
 
 
+const data = fetch("https://randomuser.me/api/").
+then(blob=>blob.json()).
+then(data=>console.log(data));
+
+

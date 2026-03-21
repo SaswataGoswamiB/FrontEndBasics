@@ -15,7 +15,8 @@ const arr3 = arr1;
 const arr4 =[...arr1];
 console.log(arr4);
 arr4[0]=10;
-console.log("Value of arr1[0] after modifying arr4:", arr1[0]); // value is 1 because we are using spread operator so the value is copied from arr1 to arr4. So when we change the value of arr4 then the value of arr1 will not change because both are refering to different array in memory.
+console.log("Value of arr1[0] after modifying arr4:", arr1[0]);
+ // value is 1 because we are using spread operator so the value is copied from arr1 to arr4. So when we change the value of arr4 then the value of arr1 will not change because both are refering to different array in memory.
 
 // Here we are using Spread Operator on Reference Data and in reference Data is Shallow copied by Memory Address. 
 // So when we change the value of arr6 then the value of arr5 also change because both are refering to same 
@@ -24,7 +25,8 @@ console.log("Value of arr1[0] after modifying arr4:", arr1[0]); // value is 1 be
 const arr5 = [{id: 11}, {id: 22}];
 const arr6 = [...arr5];
 arr6[0].id = 99;
-console.log(arr5[0].id);  // value is 99 because we are using spread operator on reference data so the reference is copied
+console.log(arr5[0].id);  
+// value is 99 because we are using spread operator on reference data so the reference is copied
 //  from arr5 to arr6. So when we change the value of arr6 then the value of arr5 also change because both are refering 
 // to same array in memory.
 
