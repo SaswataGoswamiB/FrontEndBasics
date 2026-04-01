@@ -14,6 +14,7 @@ console.log(hey);
 
 const data = fetch("https://randomuser.me/api/").
 then(blob=>blob.json()).
-then(data=>console.log(data));
+then(data=>console.log(data)).catch(e=>console.log(e))
+.finally(()=>console.log("This will run regardless of the outcome of the fetch operation."));
 
 
