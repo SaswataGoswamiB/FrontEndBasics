@@ -16,7 +16,7 @@ console.log(`The value of dec is ${updatedDec} and the type of updatedDec is ${t
 // it will round the number to the specified number 
 // of significant digits and return it as a string.
 const dec2 = 100.6353535353535353535;
-console.log(dec2.toPrecision(4));
+console.log(dec2.toPrecision(5));
 console.log(`The value of dec2 is ${dec2.toPrecision(4)} and the type of dec2 is ${typeof dec2.toPrecision(4)}`);
 
 
