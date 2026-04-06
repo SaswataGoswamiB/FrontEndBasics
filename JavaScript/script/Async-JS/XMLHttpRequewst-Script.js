@@ -6,13 +6,27 @@ const REQUEST_URL = "https://randomuser.me/api/";
 xhr.open('GET', REQUEST_URL);
 
 //on state Change
-xhr.onreadystatechange=onstateChange;
+xhr.onreadystatechange=onstatechangea;
 
 xhr.send();
 
 // See the Response
 
+ // var xhr = new XMLHttpRequest();
 
+ // xhr.open('GET',URL);
+
+ // xhr.onreadystatechange = onstatechange;
+
+ //xhr.send();
+
+  function onstatechangea(){
+    if(xhr.readyState == 4){
+        const data = xhr.responseText;
+        const finaldata = JSON.parse(data);
+        console.log(finaldata);
+    }
+ }
 
 function onstateChange(){
     console.log(xhr.readyState);

@@ -27,7 +27,7 @@ function fetchDatafromDb(){
  async function fetchDatafromDbsuingAsyncAwait(){   
     try{
          const datadb = await connectToDB();
-            console.log("DB Connection Successful:", datadb);
+         console.log("DB Connection Successful:", datadb);
     }  
     catch(error){
         console.error("Error:", error);
