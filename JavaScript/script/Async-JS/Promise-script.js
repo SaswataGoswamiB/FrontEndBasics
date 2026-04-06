@@ -1,16 +1,19 @@
 // const promiseone = new Promise(function(resolve,reject){
 // // Do any asynmc Task
 // // Db Clls
+// // staet ---> Pending
 // setTimeout(()=>{
 //     console.log("Async Task is completed");
-//     resolve();
+//     resolve(); // state --> fulfilled
 // },1000)
 
 // });
-
 // promiseone.then(function(){
 //     console.log("Promise is consumed");
 // })
+
+
+//Promise - 2
 
 // new Promise((resolve,reject)=>{
 //     setTimeout(()=>{
@@ -22,6 +25,8 @@
 // })
 
 
+//Promise -3
+
 // new Promise((resolve,reject)=>{
 
 //     resolve({username:"Saswata",age:22});
@@ -30,6 +35,7 @@
 // });
 
 
+//promise -4
 
 // new Promise((resolve,reject)=>{
 //     let success = false;
@@ -38,14 +44,20 @@
 //     }else{
 //         reject("Error: Something went wrong");
 //     }
-// }).then((data)=>{
+// })
+// .then((data)=>{
 //     console.log("Promise is consumed", data);
-// }).catch((error)=>{
+// })
+// .catch((error)=>{
 //     console.log("Error is ", error);
-// }).finally(()=>{
+// })
+// .finally(()=>{
 //     console.log("This will run regardless of the outcome of the promise.");
 // });
 
 
+//Promise - 5
 
-// chaining of promises
+
+
+
