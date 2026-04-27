@@ -23,3 +23,8 @@ html,body{
     font-size: 30px;
     gap: 20%;  
 }
+
+.makeitred{
+color: red;
+font-family: gillroy;    
+}

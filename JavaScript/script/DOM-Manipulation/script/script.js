@@ -9,3 +9,13 @@ statuse.addEventListener("click",()=>{
     text.style.fontWeight = "bold";
     text.style.transition = "all 0.5s ease-in-out";
 });
+
+var h1 = document.querySelector("h1");
+h1.classList.add('makeitred');
+
+
+//Creating element
+var newElement = document.createElement("p");
+newElement.textContent = "This is a new element created using JavaScript.";
+newElement.classList.add("makeitred");
+document.body.appendChild(newElement);
