@@ -20,26 +20,6 @@ document.querySelector(".people").innerHTML = person;
 
 document.querySelector("#input").addEventListener("input",(e)=>{
 
-// console.log(e);
-// var value = e.target.value;
-
-// var filterData = data.filter((elem)=>{
-//      return elem.name.toLocaleLowerCase().includes(value.toLocaleLowerCase());
-// });
-
-// console.log(filterData);
-
-// var person = "";
-// filterData.forEach((filterdata)=>{
-//     person += `<div class="person">
-//                             <div class="img">
-//                                 <img src ="${filterdata.src}">
-//                             </div>
-//                             <h4>${filterdata.name}</h4>
-//                     </div>`;
-// });
-// document.querySelector(".people").innerHTML = person;
-
 console.log(e);
 
 const textvalue = e.target.value;
