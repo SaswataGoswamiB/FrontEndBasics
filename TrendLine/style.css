@@ -28,7 +28,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2px;
+    gap: 4px;
 }
 
 .gola{
@@ -86,14 +86,15 @@ width: 100%;
     flex-wrap: nowrap;
     overflow-x: auto;
 }
-/* #TextContent::-webkit-scrollbar{
+#TextContent::-webkit-scrollbar{
     background-color: transparent;
     height: 10px;
-}  */
+} 
 
- /* #TextContent::-webkit-scrollbar-thumb{
+ #TextContent::-webkit-scrollbar-thumb{
     background-color: orangered;
-} */
+    margin: 4px;
+}
 .elem{
     flex-shrink: 0;
     height: 100%;
@@ -112,6 +113,7 @@ width: 100%;
     height: 50%;
     width : 100%;
     display: flex;
+    flex-wrap: nowrap;
     overflow-x: auto;
 }
 
@@ -119,6 +121,7 @@ width: 100%;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: center;
     flex-shrink: 0;
 }
 #imageContent::-webkit-scrollbar{

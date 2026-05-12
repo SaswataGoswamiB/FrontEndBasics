@@ -19,40 +19,46 @@ person += `<div class="person">
 document.querySelector(".people").innerHTML = person;
 
 document.querySelector("#input").addEventListener("input",(e)=>{
-//     var value = e.target.value;
-//     var filterData = data.filter((elem)=>{
-//         return elem.name.toLowerCase().includes(value.toLowerCase());
-//     });
-//     var person= "";
-//     filterData.forEach((elem)=>{
-//         person += `<div class="person">
+
+// console.log(e);
+// var value = e.target.value;
+
+// var filterData = data.filter((elem)=>{
+//      return elem.name.toLocaleLowerCase().includes(value.toLocaleLowerCase());
+// });
+
+// console.log(filterData);
+
+// var person = "";
+// filterData.forEach((filterdata)=>{
+//     person += `<div class="person">
 //                             <div class="img">
-//                                 <img src ="${elem.src}">
+//                                 <img src ="${filterdata.src}">
 //                             </div>
-//                             <h4>${elem.name}</h4>
+//                             <h4>${filterdata.name}</h4>
 //                     </div>`;
 // });
 // document.querySelector(".people").innerHTML = person;
 
-
 console.log(e);
-var value = e.target.value;
 
-var filterData = data.filter((elem)=>{
-     return elem.name.toLocaleLowerCase().includes(value.toLocaleLowerCase());
+const textvalue = e.target.value;
+
+const matchedData = data.filter((elem)=>{
+   return   elem.name.trim().toLowerCase().includes(textvalue.trim().toLowerCase());
 });
-
-console.log(filterData);
 
 var person = "";
-filterData.forEach((filterdata)=>{
-    person += `<div class="person">
+
+matchedData.forEach((elem)=>{
+person += `<div class="person">
                             <div class="img">
-                                <img src ="${filterdata.src}">
+                                <img src ="${elem.src}">
                             </div>
-                            <h4>${filterdata.name}</h4>
+                            <h4>${elem.name}</h4>
                     </div>`;
 });
+
 document.querySelector(".people").innerHTML = person;
 
 });
