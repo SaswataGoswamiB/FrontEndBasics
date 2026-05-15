@@ -5,7 +5,36 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
+}
+
+#page1 {
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    background-color: burlywood;
+}
+
+#page3 {
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+}
+
+#page2 img{
+    height: 100%;
+    width: 20%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
